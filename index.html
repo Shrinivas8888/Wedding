@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suraj ❤️ Trupti | Wedding Celebration — 7 July 2026 | Dharashiv</title>
+  <meta name="description" content="Join us in celebrating the wedding of Suraj Bharat Tarte and Trupti Shivaji Wagh on 7 July 2026 at Shri Ganesh Mangal Karyalay, Solapur-Dhule Bypass Road, Dharashiv, Maharashtra." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Great+Vibes&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ✨ Floating Hearts Canvas -->
+  <canvas id="heartsCanvas"></canvas>
+
+  <!-- 🎆 Fireworks Canvas -->
+  <canvas id="fireworksCanvas"></canvas>
+
+  <!-- 🎵 Music Player -->
+  <div id="musicPlayer" class="music-player">
+    <button id="musicToggle" class="music-btn" title="Toggle Music">
+      <span id="musicIcon">🎵</span>
+      <span class="music-label">Music</span>
+    </button>
+    <audio id="bgMusic" loop></audio>
+  </div>
+
+  <!-- 🧭 Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-logo">S ❤️ T</div>
+    <ul class="nav-links">
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#countdown">Countdown</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#coordinator">Coordinator</a></li>
+      <li><a href="#venue">Venue</a></li>
+      <li><a href="#share">Invitation</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- 📱 Mobile Nav -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#story" onclick="closeMobileMenu()">Our Story</a></li>
+      <li><a href="#countdown" onclick="closeMobileMenu()">Countdown</a></li>
+      <li><a href="#events" onclick="closeMobileMenu()">Events</a></li>
+      <li><a href="#coordinator" onclick="closeMobileMenu()">Coordinator</a></li>
+      <li><a href="#venue" onclick="closeMobileMenu()">Venue</a></li>
+      <li><a href="#share" onclick="closeMobileMenu()">Invitation</a></li>
+    </ul>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- 🎉 HERO / LANDING PAGE                       -->
+  <!-- ============================================ -->
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg" style="background-image:url('hero_bg.png')"></div>
+
+    <!-- Mandala decorations -->
+    <div class="mandala mandala-tl"></div>
+    <div class="mandala mandala-br"></div>
+
+    <div class="hero-content">
+      <p class="hero-pre">🕉️ || Shri Ganeshaya Namah || 🕉️</p>
+      <p class="hero-sub-pre">Together with their families</p>
+      <h1 class="hero-names">
+        <span class="name-groom">Suraj</span>
+        <span class="heart-divider">❤️</span>
+        <span class="name-bride">Trupti</span>
+      </h1>
+      <p class="hero-invite-text">
+        "With the blessings of God and our families,<br />
+        we joyfully invite you to celebrate our sacred union."
+      </p>
+      <div class="hero-date">
+        <span class="date-icon">📅</span>
+        <span>Tuesday, 7 July 2026 • Dharashiv, Maharashtra</span>
+      </div>
+      <a href="#story" class="btn-open-invitation" id="openInvitationBtn">
+        <span class="btn-text">Open Invitation</span>
+        <span class="btn-icon">✨</span>
+      </a>
+    </div>
+
+    <!-- Petal rain container -->
+    <div class="petals-container" id="petalsContainer"></div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- ❤️ OUR STORY                                 -->
+  <!-- ============================================ -->
+  <section id="story" class="story-section section">
+    <div class="section-header">
+      <p class="section-pre">How It All Began</p>
+      <h2 class="section-title">Our Story</h2>
+      <div class="title-divider"><span>💕</span></div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item left reveal">
+        <div class="timeline-dot">🌟</div>
+        <div class="timeline-card">
+          <div class="timeline-year">The Meeting</div>
+          <h3>First Encounter</h3>
+          <p>Two souls, two families — brought together by fate and divine blessings. Suraj Bharat Tarte and Trupti Shivaji Wagh first crossed paths in a moment written in the stars, one that would change their lives forever and bring two loving families together.</p>
+          <div class="timeline-img-wrap">
+            <img src="couple_photo.png" alt="First Meeting" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item right reveal">
+        <div class="timeline-dot">🤝</div>
+        <div class="timeline-card">
+          <div class="timeline-year">Friendship</div>
+          <h3>Growing Closer</h3>
+          <p>What began as a beautiful friendship blossomed into something truly special. Shared values, warm laughter and beautiful dreams brought Suraj and Trupti closer every day — their bond growing with the warmth of two families becoming one.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left reveal">
+        <div class="timeline-dot">💍</div>
+        <div class="timeline-card">
+          <div class="timeline-year">5 July 2026</div>
+          <h3>Sakharpuda (Engagement)</h3>
+          <p>Under the blessings of Lord Ganesha, Suraj and Trupti exchanged the sacred engagement — the Sakharpuda ceremony — marking the joyful beginning of their journey as a betrothed couple. Two families united in celebration and love.</p>
+          <div class="timeline-img-wrap">
+            <img src="prewedding.png" alt="Engagement" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item right reveal">
+        <div class="timeline-dot">🌿</div>
+        <div class="timeline-card">
+          <div class="timeline-year">6 July 2026</div>
+          <h3>Haldi Ceremony</h3>
+          <p>A golden day of turmeric blessings, music and family love! The Haldi ceremony filled every heart with joy as the families prayed together for the happiness and prosperity of Suraj and Trupti before their auspicious wedding day.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left reveal">
+        <div class="timeline-dot">💒</div>
+        <div class="timeline-card">
+          <div class="timeline-year">7 July 2026</div>
+          <h3>The Wedding Day</h3>
+          <p>The most beautiful chapter begins! Surrounded by loved ones and bathed in divine blessings, Suraj and Trupti are ready to begin their forever at Shri Ganesh Mangal Karyalay, Dharashiv. We are so grateful you will be part of this magic.</p>
+          <div class="timeline-img-wrap">
+            <img src="ceremony.png" alt="Wedding Day" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- ⏳ COUNTDOWN TIMER                           -->
+  <!-- ============================================ -->
+  <section id="countdown" class="countdown-section section">
+    <div class="countdown-overlay"></div>
+    <div class="countdown-bg"></div>
+    <div class="countdown-content">
+      <p class="section-pre" style="color:#f9d89c">The Big Day Approaches</p>
+      <h2 class="section-title" style="color:#fff">Wedding Begins In</h2>
+      <div class="title-divider"><span style="color:#d4af37">💛</span></div>
+      <div class="countdown-grid" id="countdownGrid">
+        <div class="count-box">
+          <span class="count-num" id="countDays">00</span>
+          <span class="count-label">Days</span>
+        </div>
+        <div class="count-sep">•</div>
+        <div class="count-box">
+          <span class="count-num" id="countHours">00</span>
+          <span class="count-label">Hours</span>
+        </div>
+        <div class="count-sep">•</div>
+        <div class="count-box">
+          <span class="count-num" id="countMinutes">00</span>
+          <span class="count-label">Minutes</span>
+        </div>
+        <div class="count-sep">•</div>
+        <div class="count-box">
+          <span class="count-num" id="countSeconds">00</span>
+          <span class="count-label">Seconds</span>
+        </div>
+      </div>
+      <p class="countdown-date-display">Tuesday, 7 July 2026 • 12:31 PM • Shri Ganesh Mangal Karyalay • Dharashiv, Maharashtra</p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 🎊 WEDDING EVENTS                            -->
+  <!-- ============================================ -->
+  <section id="events" class="events-section section">
+    <div class="section-header">
+      <p class="section-pre">Mark Your Calendars</p>
+      <h2 class="section-title">Wedding Celebrations</h2>
+      <div class="title-divider"><span>🎊</span></div>
+    </div>
+
+    <div class="events-grid">
+
+      <!-- Sakharpuda / Engagement -->
+      <div class="event-card sakharpuda-card reveal">
+        <div class="event-bg-img" style="background-image:url('prewedding.png')"></div>
+        <div class="event-overlay"></div>
+        <div class="event-content">
+          <div class="event-emoji">💍</div>
+          <h3 class="event-name">Sakharpuda (Engagement)</h3>
+          <div class="event-details">
+            <div class="event-detail"><span>📅</span> Sunday, 5 July 2026</div>
+            <div class="event-detail"><span>⏰</span> Evening 5:00 PM</div>
+            <div class="event-detail"><span>📍</span> Dharashiv, Maharashtra</div>
+          </div>
+          <p class="event-desc">The sacred engagement ceremony — Sakharpuda — where Suraj & Trupti exchange rings and vows of love with blessings from both families.</p>
+        </div>
+      </div>
+
+      <!-- Haldi -->
+      <div class="event-card haldi-card reveal">
+        <div class="event-bg-img" style="background-image:url('haldi.png')"></div>
+        <div class="event-overlay"></div>
+        <div class="event-content">
+          <div class="event-emoji">🌿</div>
+          <h3 class="event-name">Haldi Ceremony</h3>
+          <div class="event-details">
+            <div class="event-detail"><span>📅</span> Monday, 6 July 2026</div>
+            <div class="event-detail"><span>⏰</span> Evening 7:00 PM</div>
+            <div class="event-detail"><span>📍</span> Dharashiv, Maharashtra</div>
+          </div>
+          <p class="event-desc">An auspicious turmeric ritual to bless the couple with radiance, prosperity and divine protection before the sacred wedding day.</p>
+        </div>
+      </div>
+
+      <!-- Sangeet -->
+      <div class="event-card sangeet-card reveal">
+        <div class="event-bg-img" style="background-image:url('sangeet.png')"></div>
+        <div class="event-overlay"></div>
+        <div class="event-content">
+          <div class="event-emoji">🎵</div>
+          <h3 class="event-name">Sangeet & Celebration</h3>
+          <div class="event-details">
+            <div class="event-detail"><span>📅</span> Monday, 6 July 2026</div>
+            <div class="event-detail"><span>⏰</span> Evening Onwards</div>
+            <div class="event-detail"><span>📍</span> Dharashiv, Maharashtra</div>
+          </div>
+          <p class="event-desc">An evening filled with music, dance and heartfelt performances celebrating the joyful union of Suraj & Trupti with both families.</p>
+        </div>
+      </div>
+
+      <!-- Wedding -->
+      <div class="event-card wedding-card reveal" id="weddingEventCard">
+        <div class="event-bg-img" style="background-image:url('ceremony.png')"></div>
+        <div class="event-overlay"></div>
+        <div class="event-content">
+          <div class="event-emoji">🕉️</div>
+          <h3 class="event-name">Wedding Ceremony (Vivah)</h3>
+          <div class="event-details">
+            <div class="event-detail"><span>📅</span> Tuesday, 7 July 2026</div>
+            <div class="event-detail"><span>⏰</span> Afternoon 12:31 PM</div>
+            <div class="event-detail"><span>📍</span> Shri Ganesh Mangal Karyalay, Dharashiv</div>
+          </div>
+          <p class="event-desc">The sacred union of Suraj & Trupti with Vedic rituals, sacred fire and eternal vows witnessed by beloved family and friends.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 👨 WEDDING COORDINATOR — OM WAGH             -->
+  <!-- ============================================ -->
+  <section id="coordinator" class="coordinator-section section">
+    <div class="section-header">
+      <p class="section-pre">The Heart Behind the Celebration</p>
+      <h2 class="section-title">Wedding Coordinator</h2>
+      <div class="title-divider"><span>🌸</span></div>
+    </div>
+    <div class="coordinator-container reveal">
+      <div class="coordinator-card">
+        <div class="coordinator-icon">🎗️</div>
+        <div class="coordinator-badge">Bride's Brother</div>
+        <h3 class="coordinator-name">Mr. Om Wagh</h3>
+        <p class="coordinator-desc">
+          The dedicated force behind every detail of this wedding celebration — Mr. <strong>Om Wagh</strong>, the beloved brother of bride Trupti Shivaji Wagh, has been the key coordinator tirelessly ensuring every moment is perfect, every arrangement is flawless, and every guest feels warmly welcomed.
+        </p>
+        <div class="coordinator-role-tags">
+          <span class="role-tag">💐 Event Coordination</span>
+          <span class="role-tag">📋 Venue Management</span>
+          <span class="role-tag">🤝 Guest Relations</span>
+          <span class="role-tag">✨ Ceremony Planning</span>
+          <span class="role-tag">🌸 Decoration Setup</span>
+          <span class="role-tag">📸 Photography Coordination</span>
+        </div>
+        <div class="coordinator-divider">
+          <span>— With Love & Gratitude —</span>
+        </div>
+        <p class="coordinator-thanks">
+          The entire Wagh & Tarte family is deeply grateful to <strong>Mr. Om Wagh</strong> for his tireless efforts, boundless dedication and love that has made this beautiful wedding celebration possible.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 📍 VENUE & DIRECTIONS                        -->
+  <!-- ============================================ -->
+  <section id="venue" class="venue-section section">
+    <div class="section-header">
+      <p class="section-pre">Find Us Here</p>
+      <h2 class="section-title">Venue & Directions</h2>
+      <div class="title-divider"><span>📍</span></div>
+    </div>
+
+    <div class="venue-container">
+      <div class="venue-info reveal">
+        <div class="venue-card">
+          <div class="venue-icon">🏛️</div>
+          <h3 class="venue-name">Shri Ganesh Mangal Karyalay</h3>
+          <div class="venue-address">
+            <p>📍 Near Vidyamata High School,</p>
+            <p>Solapur–Dhule Bypass Road,</p>
+            <p>Dharashiv (Osmanabad) — 413501,</p>
+            <p>Maharashtra, India</p>
+          </div>
+
+          <div class="venue-extras">
+            <div class="venue-extra-item">
+              <span class="venue-extra-icon">📅</span>
+              <div>
+                <strong>Wedding Date & Time</strong>
+                <p>Tuesday, 7 July 2026 — Afternoon 12:31 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://www.google.com/maps/search/Shri+Ganesh+Mangal+Karyalay+Solapur+Dhule+Bypass+Dharashiv+Osmanabad+Maharashtra" target="_blank" class="btn-directions" id="directionsBtn">
+            <span>🗺️</span> Get Directions on Google Maps
+          </a>
+        </div>
+      </div>
+
+      <div class="venue-map reveal">
+        <div class="map-container">
+          <!-- Dharashiv (Osmanabad) District, Maharashtra — approx 18.1847°N, 76.0443°E -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60753.76!2d76.0143!3d18.1647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcfed3e12345678%3A0xabcdef1234567890!2sDharashiv%2C%20Maharashtra%20413501!5e0!3m2!1sen!2sin!4v1719400000000"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Shri Ganesh Mangal Karyalay, Solapur-Dhule Bypass Road, Dharashiv">
+          </iframe>
+        </div>
+        <!-- Landmark info card below map -->
+        <div class="venue-landmark-card">
+          <div class="landmark-item">
+            <span>🏫</span>
+            <div>
+              <strong>Landmark</strong>
+              <p>Near Vidyamata High School</p>
+            </div>
+          </div>
+          <div class="landmark-item">
+            <span>🛣️</span>
+            <div>
+              <strong>Road</strong>
+              <p>Solapur–Dhule Bypass Road</p>
+            </div>
+          </div>
+          <div class="landmark-item">
+            <span>📌</span>
+            <div>
+              <strong>District</strong>
+              <p>Dharashiv (Osmanabad), Maharashtra</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 📤 PERSONALIZED INVITATION                   -->
+  <!-- ============================================ -->
+  <section id="share" class="share-section section">
+    <div class="share-overlay"></div>
+    <div class="share-content">
+      <div class="section-header">
+        <p class="section-pre" style="color:#f9d89c">For Your Loved Ones</p>
+        <h2 class="section-title" style="color:#fff">Personalized Invitation</h2>
+        <div class="title-divider"><span style="color:#d4af37">💌</span></div>
+      </div>
+      <p class="share-desc">Generate a beautiful personalized 6-page PDF invitation for each of your guests — with their name printed on the cover page. Then download and share it with them.</p>
+
+      <div class="share-form-wrap reveal">
+        <div class="share-steps">
+          <div class="share-step">
+            <div class="share-step-num">1</div>
+            <p>Enter guest's name</p>
+          </div>
+          <div class="share-step">
+            <div class="share-step-num">2</div>
+            <p>Download & Share PDF</p>
+          </div>
+        </div>
+        <div class="share-input-group">
+          <input type="text" id="guestNameInput" placeholder="Enter guest's full name..." maxlength="60" />
+          <button class="btn-generate" id="generateInviteBtn">
+            <span>📄</span> Generate Invitation
+          </button>
+        </div>
+        <p class="share-hint">💡 The personalized PDF will include the guest's name on Page 2 (Personal Welcome page).</p>
+      </div>
+
+      <div class="invite-preview" id="invitePreview" style="display:none">
+        <div class="invite-card">
+          <div class="invite-card-header">
+            <div class="invite-ganesh-icon">🕉️</div>
+            <p class="invite-welcome" id="inviteWelcome">Dear Guest ❤️</p>
+          </div>
+          <p class="invite-body">Your personalized invitation has been prepared for the wedding of</p>
+          <h3 class="invite-couple">Suraj ❤️ Trupti</h3>
+          <p class="invite-date">📅 Tuesday, 7 July 2026 • Shri Ganesh Mangal Karyalay, Dharashiv</p>
+
+          <div class="invite-actions">
+            <button class="btn-download-pdf" id="downloadPdfBtn">
+              <span>⬇️</span> Download / Print PDF
+            </button>
+          </div>
+
+          <div class="invite-pdf-info">
+            <p>📋 Your 6-page PDF invitation includes:</p>
+            <ul>
+              <li>🙏 Page 1 — Lord Ganesha Blessing (Om Shree Ganeshay Namah)</li>
+              <li>👤 Page 2 — Personal Welcome with Guest's Name</li>
+              <li>💍 Page 3 — Main Invitation (Suraj & Trupti with family details)</li>
+              <li>📅 Page 4 — Save the Date (7 July 2026)</li>
+              <li>🎊 Page 5 — All Functions & Ceremonies Schedule</li>
+              <li>🌸 Page 6 — Family Blessings & Closing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 👣 FOOTER                                    -->
+  <!-- ============================================ -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-ganesh">🕉️</div>
+      <h3 class="footer-names">Suraj ❤️ Trupti</h3>
+      <p class="footer-date">Tuesday, 7 July 2026 • Shri Ganesh Mangal Karyalay • Dharashiv, Maharashtra</p>
+      <p class="footer-quote">"Two souls, one heart, a lifetime of love and divine blessings."</p>
+      <div class="footer-families">
+        <span>Tarte Family</span>
+        <span class="footer-family-sep">💐</span>
+        <span>Wagh Family</span>
+      </div>
+      <div class="footer-nav">
+        <a href="#hero">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#events">Events</a>
+        <a href="#coordinator">Coordinator</a>
+        <a href="#venue">Venue</a>
+        <a href="#share">Invitation</a>
+      </div>
+      <div class="footer-divider-line"></div>
+      <div class="footer-coordinator-note">
+        <p>🎗️ Wedding Coordinated by <strong>Mr. Om Wagh</strong> (Bride's Brother)</p>
+      </div>
+      <div class="footer-developer">
+        <p>Developed with ❤️ by <strong>Shrinivas Solapure</strong></p>
+        <p class="footer-portal-note">Main Wedding Portal</p>
+      </div>
+    </div>
+    <div class="footer-petals"></div>
+  </footer>
+
+  <!-- Guest Welcome Modal (for personalized links) -->
+  <div class="guest-modal" id="guestModal" style="display:none">
+    <div class="guest-modal-overlay"></div>
+    <div class="guest-modal-box">
+      <button class="guest-modal-close" id="guestModalClose">✕</button>
+      <div class="guest-modal-heart">🕉️</div>
+      <h2 id="guestModalTitle">Welcome!</h2>
+      <p id="guestModalMsg">You are invited to celebrate the wedding of Suraj & Trupti.</p>
+      <div class="guest-modal-details">
+        <p>📅 Tuesday, 7 July 2026</p>
+        <p>📍 Shri Ganesh Mangal Karyalay</p>
+        <p>🛣️ Solapur-Dhule Bypass Road, Dharashiv</p>
+      </div>
+      <button class="btn-modal-enter" id="guestModalEnter">Enter Website ✨</button>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
