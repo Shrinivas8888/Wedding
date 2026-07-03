@@ -338,13 +338,21 @@ input:focus, textarea:focus, select:focus {
   margin-bottom: 28px;
   animation: fadeInDown 1s 0.6s both;
 }
-.name-groom, .name-bride {
-  background: linear-gradient(135deg, #f9d89c, var(--gold), #f0d060);
+.name-groom,
+.name-bride {
+  background: linear-gradient(
+    135deg,
+    #ffe4ec,
+    #ff8fab,
+    #ff4d8d,
+    #d63384,
+    #ffb3c6
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: none;
-  filter: drop-shadow(0 0 30px rgba(212,175,55,0.4));
+  filter: drop-shadow(0 0 18px rgba(255,77,141,0.45));
 }
 .heart-divider {
   font-size: 0.6em;
